@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	
+	<head>
+		{% block title %}<title>List of Daily Deals in Singapore on {{ today_datetime|date:"dS F Y" }}</title>{% endblock %}
+		<link rel="stylesheet" type="text/css" href="/staticmedia/css/base.css" media="all" />
+	</head>
+
+	<body>
+		{% block content %}
+		<p>Default View</p>
+		{% endblock %}
+	</body>
+</html>

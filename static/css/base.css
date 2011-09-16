@@ -1,0 +1,26 @@
+body {
+	font-family: Helvetica;
+}
+
+div#main_body h1 {
+	font-size: 30px;
+	text-align: center;
+}
+
+div#deal_one, div#deal_two, div#deal_three, div#deal_four, div#deal_five, div#deal_six {
+	margin: 50px 50px;
+}
+
+div#deal_logo a img {
+	margin-top: 30%;
+	border: solid black;
+}
+
+div#deal_logo, div#deal_title, div#deal_price, div#deal_url {
+	display: inline;
+}
+
+div#deal_title {
+	width: 200px;
+	border: solid black;
+}

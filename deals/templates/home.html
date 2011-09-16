@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="main_body">
+	<h1>List of Daily Deals in Singapore on {{ today_datetime|date:"dS F Y" }}</h1>
+		<div id="deal_one">
+			<div id="deal_logo">
+				<a href="http://www.groupon.sg"><img src="/staticmedia/logos/groupon.png" /></a>
+			</div>
+			<div id="deal_title">
+				{{ deals.0.title }}
+			</div>
+			<div id="deal_price">
+				{{ deals.0.price }}
+			</div>
+			<div id="deal_url">
+				<a href="{{ deals.0.url }}">Check-out</a>
+			</div>
+		</div>
+		<div id="deal_two">
+			<div id="deal_logo">
+				<a href="http://www.bigdeal.sg"><img src="/staticmedia/logos/bigdeal.png" /></a>
+			</div>
+			<div id="deal_title">
+				{{ deals.1.title }}
+			</div>
+			<div id="deal_price">
+				{{ deals.1.price }}
+			</div>
+			<div id="deal_url">
+				<a href="{{ deals.1.url }}">Check-out</a>
+			</div>
+		</div>
+		<div id="deal_three">
+			<div id="deal_logo">
+				<a href="http://www.voucherwow.com/cities/singapore"><img src="/staticmedia/logos/voucherwow.png" /></a>
+			</div>
+			<div id="deal_title">
+				{{ deals.2.title }}
+			</div>
+			<div id="deal_price">
+				{{ deals.2.price }}
+			</div>
+			<div id="deal_url">
+				<a href="{{ deals.2.url }}">Check-out</a>
+			</div>
+		</div>
+		<div id="deal_four">
+			<div id="deal_logo">
+				<a href="http://www.deal.com.sg"><img src="/staticmedia/logos/dealcomsg.png" /></a>
+			</div>
+			<div id="deal_title">
+				{{ deals.3.title }}
+			</div>
+			<div id="deal_price">
+				{{ deals.3.price }}
+			</div>
+			<div id="deal_url">
+				<a href="{{ deals.3.url }}">Check-out</a>
+			</div>
+		</div>
+		<div id="deal_five">
+			<div id="deal_logo">
+				<a href="http://www.alldealsasia.com"><img src="/staticmedia/logos/alldealsasia.png" /></a>
+			</div>
+			<div id="deal_title">
+				{{ deals.4.title }}
+			</div>
+			<div id="deal_price">
+				{{ deals.4.price }}
+			</div>
+			<div id="deal_url">
+				<a href="{{ deals.4.url }}">Check-out</a>
+			</div>
+		</div>
+		<div id="deal_six">
+			<div id="deal_logo">
+				<a href="http://www.shiokdeal.com"><img src="/staticmedia/logos/shiokdeal.png" /></a>
+			</div>
+			<div id="deal_title">
+				{{ deals.5.title }}
+			</div>
+			<div id="deal_price">
+				{{ deals.5.price }}
+			</div>
+			<div id="deal_url">
+				<a href="{{ deals.5.url }}">Check-out</a>
+			</div>
+		</div>
+</div>
+{% endblock %}
